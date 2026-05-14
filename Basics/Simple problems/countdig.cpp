@@ -14,3 +14,6 @@ int main()
     cout<<n<<" has "<<count<<" digits"<<endl;
     return 0;
 }
+
+//Time complexity O(logn)
+//space complexity O(1)
