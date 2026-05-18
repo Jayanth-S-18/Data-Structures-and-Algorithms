@@ -2,22 +2,19 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void selectionsort(vector<int> &arr)
+void insertionsort(vector<int> &arr)
 {
     int n=arr.size();
-    for(int i=0;i<n-1;i++)
+    for(int i=1;i<n;i++)
     {
-        int min=i;
-        for(int j=i+1;j<n;j++)
+        int key=arr[i];
+        int j=i-1;
+        while(j>=0 && arr[j]>key)
         {
-            if(arr[j]<arr[min])
-            {
-                min=j;
-            }
+            arr[j+1]=arr[j];
+            j--;
         }
-        int temp=arr[i];
-        arr[i]=arr[min];
-        arr[min]=temp;
+        arr[j+1]=key;
     }
     cout<<"Sorted array: "<<endl;
     for(int i=0;i<n;i++)
@@ -36,7 +33,7 @@ int main()
     {
         cin>>a[i];
     }
-    selectionsort(a);
+    insertionsort(a);
     
     return 0;
 }
