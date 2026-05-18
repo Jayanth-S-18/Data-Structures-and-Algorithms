@@ -68,6 +68,6 @@ g++ TwoSum.cpp -o TwoSum
 🤝 Connect with Me
 I am always open to discussing tech, algorithms, and software engineering opportunities!
 
-LinkedIn: [Jayanth S](www.linkedin.com/in/jayanth-s-701b81234)
+LinkedIn: Jayanth S(www.linkedin.com/in/jayanth-s-701b81234)
 
 GitHub: [Jayanth-S-18](https://github.com/Jayanth-S-18)
